@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.internship.krishinetwork">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/ic_kn_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_kn_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KrishiNetwork">
+        <activity android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowFormActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FormActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StreamVideoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
